@@ -8,8 +8,8 @@ item.CorundumIngot.name=Corundum Ingot
 item.EbonyIngot.name=Ebony Ingot
 item.OrichalcumIngot.name=Orichalcum Ingot
 item.MalachiteIngot.name=MalachiteIngot
-item.MoonStoneIngot.name = Moonstone Ingot
-item.QuickSilverIngot.name = Quicksilver Ingot
+item.MoonStoneIngot.name=Moonstone Ingot
+item.QuickSilverIngot.name=Quicksilver Ingot
 
 tile.SilverOre.name=Silver Ore
 tile.CorundumOre.name=Corundum Ore

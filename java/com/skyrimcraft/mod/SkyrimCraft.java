@@ -5,12 +5,18 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
+import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.common.util.EnumHelper;
 
 import com.skyrimcraft.mod.blocks.SCOres;
+import com.skyrimcraft.mod.daggers.SCDaggers;
 import com.skyrimcraft.mod.handler.SkyrimCraftEventHandler;
 import com.skyrimcraft.mod.items.SCIngots;
+import com.skyrimcraft.mod.maces.SCMaces;
 import com.skyrimcraft.mod.proxy.CommonProxy;
+import com.skyrimcraft.mod.swords.SCSwords;
+import com.skyrimcraft.mod.waraxes.SCWarAxes;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -33,6 +39,16 @@ public class SkyrimCraft {
 	
 	@Instance(modID)
 	public static SkyrimCraft instance;
+	
+	//Tool Materials
+	
+		//Iron
+	
+		//Steel
+		ToolMaterial steelDagger = EnumHelper.addToolMaterial("steelDagger", 2, 600, 7.0F, 2.3F, 10);
+		ToolMaterial steelSword = EnumHelper.addToolMaterial("steelSword", 2, 600, 7.0F, 3.0F, 10);
+		ToolMaterial steelWarAxe = EnumHelper.addToolMaterial("steelWarAxe", 2, 600, 7.0F, 3.3F, 10);
+		ToolMaterial steelMace = EnumHelper.addToolMaterial("steelMace", 2, 600, 7.0F, 3.1F, 10);
 	
 	SkyrimCraftEventHandler handler = new SkyrimCraftEventHandler();
 	
@@ -62,6 +78,10 @@ public class SkyrimCraft {
 			public static Block blockQuickSilverOre;
 	
 		//Weapons
+			public static Item itemSteelDagger;
+			public static Item itemSteelSword;
+			public static Item itemSteelWarAxe;
+			public static Item itemSteelMace;
 	
 		//Armor
 	
@@ -95,6 +115,10 @@ public class SkyrimCraft {
 				blockQuickSilverOre = new SCOres().setBlockName("QuickSilverOre");
 				
 			//Weapons
+				itemSteelDagger = new SCDaggers(steelDagger).setUnlocalizedName("SteelDagger");
+				itemSteelSword = new SCSwords(steelSword).setUnlocalizedName("SteelSword");
+				itemSteelWarAxe = new SCWarAxes(steelWarAxe).setUnlocalizedName("SteelWarAxe");
+				itemSteelMace = new SCMaces(steelMace).setUnlocalizedName("SteelMace");
 	
 			//Armor
 		
@@ -127,6 +151,10 @@ public class SkyrimCraft {
 				GameRegistry.registerBlock(blockQuickSilverOre, "QuickSilverOre");
 				
 			//Weapons
+				GameRegistry.registerItem(itemSteelDagger, "SteelDagger");
+				GameRegistry.registerItem(itemSteelSword, "SteelSword");
+				GameRegistry.registerItem(itemSteelWarAxe, "SteelWarAxe");
+				GameRegistry.registerItem(itemSteelMace, "SteelMace");
 	
 			//Armor
 				
@@ -175,7 +203,7 @@ public class SkyrimCraft {
 	public static CreativeTabs tabSkyrimCraftMaterials = new CreativeTabs("tabSkyrimCraftMaterials") {
 		@Override
 		public Item getTabIconItem() {
-			return SkyrimCraft.itemSilverIngot;
+			return SkyrimCraft.itemCorundumIngot;
 		}
 	};
 	
