@@ -1,0 +1,16 @@
+[
+{
+  "modid": "skyrimcraft",
+  "name": "SkyrimCraft",
+  "description": "A Minecraft mod that brings Skyrim to Minecraft!!",
+  "version": "Alpha v0.1",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Eridiah"],
+  "credits": "Bethesda, for making Skyrim, and to Mojang, for making Minecraft",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
