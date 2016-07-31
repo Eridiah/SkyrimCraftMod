@@ -145,6 +145,12 @@ public class SkyrimCraft {
 		
 			//Ores
 				GameRegistry.addSmelting(blockSilverOre, new ItemStack(itemSilverIngot), 20);
+				GameRegistry.addSmelting(blockCorundumOre, new ItemStack(itemCorundumIngot), 20);
+				GameRegistry.addSmelting(blockEbonyOre, new ItemStack(itemEbonyIngot), 20);
+				GameRegistry.addSmelting(blockOrichalcumOre, new ItemStack(itemOrichalcumIngot), 20);
+				GameRegistry.addSmelting(blockMalachiteOre, new ItemStack(itemMalachiteIngot), 20);
+				GameRegistry.addSmelting(blockMoonStoneOre, new ItemStack(itemMoonStoneIngot), 20);
+				GameRegistry.addSmelting(blockQuickSilverOre, new ItemStack(itemQuickSilverIngot), 20);
 	}
 	
 	@EventHandler
