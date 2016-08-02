@@ -1,17 +1,21 @@
 package com.skyrimcraft.mod.items;
 
 import net.minecraft.client.renderer.texture.IIconRegister;
-import net.minecraft.item.Item;
+import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
+import net.minecraft.potion.Potion;
 
 import com.skyrimcraft.mod.SkyrimCraft;
+import com.skyrimcraft.mod.libs.Reference;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class DaedraHeart extends Item {
+public class DaedraHeart extends ItemFood {
 
-	public DaedraHeart() {
+	public DaedraHeart(int food, float saturation, boolean wolfFood) {
+		super(food, saturation, wolfFood);
+		this.setPotionEffect(Potion.poison.id, 5, 0, 0.7F);
 		this.setCreativeTab(SkyrimCraft.tabSkyrimCraftItems);
 	}
 	
@@ -22,7 +26,7 @@ public class DaedraHeart extends Item {
 	
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IIconRegister iconRegister) {
-		this.itemIcon = iconRegister.registerIcon(SkyrimCraft.modID + ":" + this.getUnlocalizedName().substring(5));
+		this.itemIcon = iconRegister.registerIcon(Reference.modID + ":" + this.getUnlocalizedName().substring(5));
 	}
 	
 }

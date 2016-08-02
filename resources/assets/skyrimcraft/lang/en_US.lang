@@ -30,3 +30,10 @@ item.SteelMace.name=Steel Mace
 item.SteelGreatSword.name=Steel Greatsword
 item.SteelBattleAxe.name=Steel Battle Axe
 item.SteelWarHammer.name=Steel Warhammer
+
+item.IronDagger.name=Iron Dagger
+item.IronWarAxe.name=Iron War Axe
+item.IronMace.name=Iron Mace
+item.IronGreatSword.name=Iron Greatsword
+item.IronBattleAxe.name=Iron Battleaxe
+item.IronWarHammer.name=Iron Warhammer

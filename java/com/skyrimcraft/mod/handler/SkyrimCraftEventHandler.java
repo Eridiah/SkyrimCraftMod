@@ -1,11 +1,18 @@
 package com.skyrimcraft.mod.handler;
 
+import java.util.Iterator;
+import java.util.List;
 import java.util.Random;
 
 import com.skyrimcraft.mod.SkyrimCraft;
+import com.skyrimcraft.mod.libs.SCDecs;
 
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.crafting.CraftingManager;
+import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
@@ -32,13 +39,13 @@ public class SkyrimCraftEventHandler implements IWorldGenerator {
 
 	private void generateSurface(World world, Random random, int x, int z) {
 		
-		addOreSpawn(SkyrimCraft.blockSilverOre, 0, Blocks.stone, world, random, x, z, 16, 16, 5 + random.nextInt(5), 4, 5, 30);
-		addOreSpawn(SkyrimCraft.blockCorundumOre, 0, Blocks.stone, world, random, x, z, 16, 16, 5 + random.nextInt(5), 5, 5, 50);
-		addOreSpawn(SkyrimCraft.blockEbonyOre, 0, Blocks.stone, world, random, x, z, 16, 16, 4 + random.nextInt(4), 2, 2, 15);
-		addOreSpawn(SkyrimCraft.blockOrichalcumOre, 0, Blocks.stone, world, random, x, z, 16, 16, 5 + random.nextInt(5), 4, 3, 40);
-		addOreSpawn(SkyrimCraft.blockMalachiteOre, 0, Blocks.stone, world, random, x, z, 16, 16, 5 + random.nextInt(5), 3, 2, 25);
-		addOreSpawn(SkyrimCraft.blockMoonStoneOre, 0, Blocks.stone, world, random, x, z, 16, 16, 5 + random.nextInt(5), 4, 1, 32);
-		addOreSpawn(SkyrimCraft.blockQuickSilverOre, 0, Blocks.stone, world, random, x, z, 16, 16, 5 + random.nextInt(5), 4, 3, 27);
+		addOreSpawn(SCDecs.blockSilverOre, 0, Blocks.stone, world, random, x, z, 16, 16, 5 + random.nextInt(5), 4, 5, 30);
+		addOreSpawn(SCDecs.blockCorundumOre, 0, Blocks.stone, world, random, x, z, 16, 16, 5 + random.nextInt(5), 5, 5, 50);
+		addOreSpawn(SCDecs.blockEbonyOre, 0, Blocks.stone, world, random, x, z, 16, 16, 4 + random.nextInt(4), 2, 2, 15);
+		addOreSpawn(SCDecs.blockOrichalcumOre, 0, Blocks.stone, world, random, x, z, 16, 16, 5 + random.nextInt(5), 4, 3, 40);
+		addOreSpawn(SCDecs.blockMalachiteOre, 0, Blocks.stone, world, random, x, z, 16, 16, 5 + random.nextInt(5), 3, 2, 25);
+		addOreSpawn(SCDecs.blockMoonStoneOre, 0, Blocks.stone, world, random, x, z, 16, 16, 5 + random.nextInt(5), 4, 1, 32);
+		addOreSpawn(SCDecs.blockQuickSilverOre, 0, Blocks.stone, world, random, x, z, 16, 16, 5 + random.nextInt(5), 4, 3, 27);
 		
 	}
 
