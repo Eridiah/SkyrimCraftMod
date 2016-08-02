@@ -8,6 +8,7 @@ public class SCRegisters {
 		
 		//Items
 			GameRegistry.registerItem(SCDecs.itemDaedraHeart, "DaedraHeart");
+			GameRegistry.registerItem(SCDecs.itemDaedraHeartReg, "DaedraHeartReg");
 			GameRegistry.registerItem(SCDecs.itemLeatherStraps, "LeatherStraps");
 		
 		//Ingots
@@ -23,6 +24,9 @@ public class SCRegisters {
 	
 	public static void blockRegisters() {
 		
+		//Blocks
+			GameRegistry.registerBlock(SCDecs.blockToolForge, "ToolForge");
+		
 		//Ores
 			GameRegistry.registerBlock(SCDecs.blockSilverOre, "SilverOre");
 			GameRegistry.registerBlock(SCDecs.blockCorundumOre, "CorundumOre");
@@ -37,6 +41,7 @@ public class SCRegisters {
 		
 		//Iron
 			GameRegistry.registerItem(SCDecs.itemIronDagger, "IronDagger");
+			GameRegistry.registerItem(SCDecs.itemIronSword, "IronSword");
 			GameRegistry.registerItem(SCDecs.itemIronWarAxe, "IronWarAxe");
 			GameRegistry.registerItem(SCDecs.itemIronMace, "IronMace");
 			GameRegistry.registerItem(SCDecs.itemIronGreatSword, "IronGreatSword");

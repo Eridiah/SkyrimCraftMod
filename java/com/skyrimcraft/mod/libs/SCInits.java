@@ -2,9 +2,11 @@ package com.skyrimcraft.mod.libs;
 
 import com.skyrimcraft.mod.battleaxes.SCBattleAxes;
 import com.skyrimcraft.mod.blocks.SCOres;
+import com.skyrimcraft.mod.blocks.ToolForge;
 import com.skyrimcraft.mod.daggers.SCDaggers;
 import com.skyrimcraft.mod.greatswords.SCGreatSwords;
 import com.skyrimcraft.mod.items.DaedraHeart;
+import com.skyrimcraft.mod.items.DaedraHeartReg;
 import com.skyrimcraft.mod.items.SCIngots;
 import com.skyrimcraft.mod.items.SCItem;
 import com.skyrimcraft.mod.maces.SCMaces;
@@ -18,6 +20,7 @@ public class SCInits {
 		
 		//Items
 		SCDecs.itemDaedraHeart = new DaedraHeart(3, 0.3F, false).setUnlocalizedName("DaedraHeart");
+		SCDecs.itemDaedraHeartReg = new DaedraHeartReg().setUnlocalizedName("DaedraHeartReg");
 		SCDecs.itemLeatherStraps = new SCItem().setUnlocalizedName("LeatherStraps");
 		
 		//Ingots
@@ -34,6 +37,7 @@ public class SCInits {
 		
 			//Iron
 			SCDecs.itemIronDagger = new SCDaggers(SCDecs.ironDagger).setUnlocalizedName("IronDagger");
+			SCDecs.itemIronSword = new SCSwords(SCDecs.ironSword).setUnlocalizedName("IronSword");
 			SCDecs.itemIronWarAxe = new SCWarAxes(SCDecs.ironWarAxe).setUnlocalizedName("IronWarAxe");
 			SCDecs.itemIronMace = new SCMaces(SCDecs.ironMace).setUnlocalizedName("IronMace");
 			SCDecs.itemIronGreatSword = new SCGreatSwords(SCDecs.ironGreatSword).setUnlocalizedName("IronGreatSword");
@@ -51,6 +55,9 @@ public class SCInits {
 	}
 	
 	public static void initBlocks() {
+		
+		//Blocks
+		SCDecs.blockToolForge = new ToolForge().setBlockName("ToolForge");
 		
 		//Ores
 		SCDecs.blockSilverOre = new SCOres().setBlockName("SilverOre");

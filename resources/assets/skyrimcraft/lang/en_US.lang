@@ -4,6 +4,7 @@ itemGroup.tabSkyrimCraftMaterials=SkyrimCraft Materials
 itemGroup.tabSkyrimCraftWeapons=SkyrimCraft Weapons
 
 item.DaedraHeart.name=Daedra Heart
+item.DaedraHeartReg.name=Daedra Heart
 item.LeatherStraps.name=Leather Straps
 
 item.SilverIngot.name=Silver Ingot
@@ -14,6 +15,8 @@ item.MalachiteIngot.name=Malachite Ingot
 item.MoonStoneIngot.name=Moonstone Ingot
 item.QuickSilverIngot.name=Quicksilver Ingot
 item.SteelIngot.name=Steel Ingot
+
+tile.ToolForge.name=Tool Forge
 
 tile.SilverOre.name=Silver Ore
 tile.CorundumOre.name=Corundum Ore
@@ -32,6 +35,7 @@ item.SteelBattleAxe.name=Steel Battle Axe
 item.SteelWarHammer.name=Steel Warhammer
 
 item.IronDagger.name=Iron Dagger
+item.IronSword.name=Iron Sword
 item.IronWarAxe.name=Iron War Axe
 item.IronMace.name=Iron Mace
 item.IronGreatSword.name=Iron Greatsword

@@ -11,6 +11,7 @@ public class SCDecs {
 	
 		//Iron
 		static ToolMaterial ironDagger = EnumHelper.addToolMaterial("ironDagger", 2, 600, 7.0F, 1.6F, 10);
+		static ToolMaterial ironSword = EnumHelper.addToolMaterial("ironSword", 2, 600, 7.0F, 2.0F, 10);
 		static ToolMaterial ironWarAxe = EnumHelper.addToolMaterial("ironWarAxe", 2, 600, 7.0F, 2.1F, 10);
 		static ToolMaterial ironMace = EnumHelper.addToolMaterial("ironMace", 2, 600, 7.0F, 2.2F, 10);
 		static ToolMaterial ironGreatSword = EnumHelper.addToolMaterial("ironLongSword", 2, 600, 7.0F, 2.5F, 10);
@@ -28,9 +29,12 @@ public class SCDecs {
 
 	//Items
 		public static Item itemDaedraHeart;
+		public static Item itemDaedraHeartReg;
 		public static Item itemLeatherStraps;
 		
 	//Blocks
+		public static Block blockToolForge;
+		public static final int guiIDToolForge = 1;
 	
 	//Ingots
 		public static Item itemSilverIngot;
@@ -55,6 +59,7 @@ public class SCDecs {
 	
 	//Iron
 		public static Item itemIronDagger;
+		public static Item itemIronSword;
 		public static Item itemIronWarAxe;
 		public static Item itemIronMace;
 		public static Item itemIronGreatSword;
