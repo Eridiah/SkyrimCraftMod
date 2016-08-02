@@ -1,20 +1,22 @@
-package com.skyrimcraft.mod.items;
+package com.skyrimcraft.mod.greatswords;
 
 import net.minecraft.client.renderer.texture.IIconRegister;
-import net.minecraft.item.Item;
+import net.minecraft.item.ItemSword;
 
 import com.skyrimcraft.mod.SkyrimCraft;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class SCIngots extends Item {
+public class SCGreatSwords extends ItemSword {
 
-	public SCIngots() {
+	public SCGreatSwords(ToolMaterial material) {
+		super(material);
 		
-		this.setCreativeTab(SkyrimCraft.tabSkyrimCraftMaterials);
+		this.setFull3D();
+		this.setCreativeTab(SkyrimCraft.tabSkyrimCraftWeapons);
 	}
-	
+
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IIconRegister iconRegister) {
 		this.itemIcon = iconRegister.registerIcon(SkyrimCraft.modID + ":" + this.getUnlocalizedName().substring(5));

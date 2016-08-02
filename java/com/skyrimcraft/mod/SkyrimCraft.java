@@ -7,16 +7,22 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.client.MinecraftForgeClient;
 import net.minecraftforge.common.util.EnumHelper;
 
+import com.skyrimcraft.mod.battleaxes.SCBattleAxes;
 import com.skyrimcraft.mod.blocks.SCOres;
 import com.skyrimcraft.mod.daggers.SCDaggers;
+import com.skyrimcraft.mod.greatswords.SCGreatSwords;
 import com.skyrimcraft.mod.handler.SkyrimCraftEventHandler;
+import com.skyrimcraft.mod.items.DaedraHeart;
 import com.skyrimcraft.mod.items.SCIngots;
+import com.skyrimcraft.mod.items.SCItem;
 import com.skyrimcraft.mod.maces.SCMaces;
 import com.skyrimcraft.mod.proxy.CommonProxy;
 import com.skyrimcraft.mod.swords.SCSwords;
 import com.skyrimcraft.mod.waraxes.SCWarAxes;
+import com.skyrimcraft.mod.warhammers.SCWarHammers;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -45,16 +51,21 @@ public class SkyrimCraft {
 		//Iron
 	
 		//Steel
-		ToolMaterial steelDagger = EnumHelper.addToolMaterial("steelDagger", 2, 600, 7.0F, 2.3F, 10);
-		ToolMaterial steelSword = EnumHelper.addToolMaterial("steelSword", 2, 600, 7.0F, 3.0F, 10);
-		ToolMaterial steelWarAxe = EnumHelper.addToolMaterial("steelWarAxe", 2, 600, 7.0F, 3.3F, 10);
-		ToolMaterial steelMace = EnumHelper.addToolMaterial("steelMace", 2, 600, 7.0F, 3.1F, 10);
+		ToolMaterial steelDagger = EnumHelper.addToolMaterial("steelDagger", 2, 600, 7.0F, 1.9F, 10);
+		ToolMaterial steelSword = EnumHelper.addToolMaterial("steelSword", 2, 600, 7.0F, 2.5F, 10);
+		ToolMaterial steelWarAxe = EnumHelper.addToolMaterial("steelWarAxe", 2, 600, 7.0F, 3.0F, 10);
+		ToolMaterial steelMace = EnumHelper.addToolMaterial("steelMace", 2, 600, 7.0F, 2.8F, 10);
+		ToolMaterial steelGreatSword = EnumHelper.addToolMaterial("steelLongSword", 2, 600, 7.0F, 3.5F, 10);
+		ToolMaterial steelBattleAxe = EnumHelper.addToolMaterial("steelBattleAxe", 2, 600, 7.0F, 3.7F, 10);
+		ToolMaterial steelWarHammer = EnumHelper.addToolMaterial("steelWarHammer", 2, 600, 7.0F, 3.6F, 10);
 	
 	SkyrimCraftEventHandler handler = new SkyrimCraftEventHandler();
 	
 	//Declarations
 	
 		//Items
+			public static Item itemDaedraHeart;
+			public static Item itemLeatherStraps;
 	
 		//Blocks
 	
@@ -82,6 +93,9 @@ public class SkyrimCraft {
 			public static Item itemSteelSword;
 			public static Item itemSteelWarAxe;
 			public static Item itemSteelMace;
+			public static Item itemSteelGreatSword;
+			public static Item itemSteelBattleAxe;
+			public static Item itemSteelWarHammer;
 	
 		//Armor
 	
@@ -92,6 +106,8 @@ public class SkyrimCraft {
 		//Initializations
 		
 			//Items
+				itemDaedraHeart = new DaedraHeart().setUnlocalizedName("DaedraHeart");
+				itemLeatherStraps = new SCItem().setUnlocalizedName("LeatherStraps");
 			
 			//Blocks
 	
@@ -119,6 +135,10 @@ public class SkyrimCraft {
 				itemSteelSword = new SCSwords(steelSword).setUnlocalizedName("SteelSword");
 				itemSteelWarAxe = new SCWarAxes(steelWarAxe).setUnlocalizedName("SteelWarAxe");
 				itemSteelMace = new SCMaces(steelMace).setUnlocalizedName("SteelMace");
+				itemSteelGreatSword = new SCGreatSwords(steelGreatSword).setUnlocalizedName("SteelGreatSword");
+				itemSteelBattleAxe = new SCBattleAxes(steelBattleAxe).setUnlocalizedName("SteelBattleAxe");
+				itemSteelWarHammer = new SCWarHammers(steelWarHammer).setUnlocalizedName("SteelWarHammer");
+				
 	
 			//Armor
 		
@@ -127,6 +147,8 @@ public class SkyrimCraft {
 		//Registers
 		
 			//Items
+				GameRegistry.registerItem(itemDaedraHeart, "DaedraHeart");
+				GameRegistry.registerItem(itemLeatherStraps, "LeatherStraps");
 			
 			//Blocks
 	
@@ -155,6 +177,9 @@ public class SkyrimCraft {
 				GameRegistry.registerItem(itemSteelSword, "SteelSword");
 				GameRegistry.registerItem(itemSteelWarAxe, "SteelWarAxe");
 				GameRegistry.registerItem(itemSteelMace, "SteelMace");
+				GameRegistry.registerItem(itemSteelGreatSword, "SteelGreatSword");
+				GameRegistry.registerItem(itemSteelBattleAxe, "SteelBattleAxe");
+				GameRegistry.registerItem(itemSteelWarHammer, "SteelWarHammer");
 	
 			//Armor
 				

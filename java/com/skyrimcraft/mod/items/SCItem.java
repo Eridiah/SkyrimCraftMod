@@ -1,18 +1,16 @@
 package com.skyrimcraft.mod.items;
 
-import net.minecraft.client.renderer.texture.IIconRegister;
-import net.minecraft.item.Item;
-
 import com.skyrimcraft.mod.SkyrimCraft;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.item.Item;
 
-public class SCIngots extends Item {
+public class SCItem extends Item {
 
-	public SCIngots() {
-		
-		this.setCreativeTab(SkyrimCraft.tabSkyrimCraftMaterials);
+	public SCItem() {
+		this.setCreativeTab(SkyrimCraft.tabSkyrimCraftItems);
 	}
 	
 	@SideOnly(Side.CLIENT)

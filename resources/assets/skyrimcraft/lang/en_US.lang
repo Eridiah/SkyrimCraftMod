@@ -3,13 +3,17 @@ itemGroup.tabSkyrimCraftBlocks=SkyrimCraft Blocks
 itemGroup.tabSkyrimCraftMaterials=SkyrimCraft Materials
 itemGroup.tabSkyrimCraftWeapons=SkyrimCraft Weapons
 
+item.DaedraHeart.name=Daedra Heart
+item.LeatherStraps.name=Leather Straps
+
 item.SilverIngot.name=Silver Ingot
 item.CorundumIngot.name=Corundum Ingot
 item.EbonyIngot.name=Ebony Ingot
 item.OrichalcumIngot.name=Orichalcum Ingot
-item.MalachiteIngot.name=MalachiteIngot
+item.MalachiteIngot.name=Malachite Ingot
 item.MoonStoneIngot.name=Moonstone Ingot
 item.QuickSilverIngot.name=Quicksilver Ingot
+item.SteelIngot.name=Steel Ingot
 
 tile.SilverOre.name=Silver Ore
 tile.CorundumOre.name=Corundum Ore
@@ -18,3 +22,11 @@ tile.OrichalcumOre.name=Orichalcum Ore
 tile.MalachiteOre.name=Malachite Ore
 tile.MoonStoneOre.name=Moonstone Ore
 tile.QuickSilverOre.name=Quicksilver Ore
+
+item.SteelDagger.name=Steel Dagger
+item.SteelSword.name=Steel Sword
+item.SteelWarAxe.name=Steel War Axe
+item.SteelMace.name=Steel Mace
+item.SteelGreatSword.name=Steel Greatsword
+item.SteelBattleAxe.name=Steel Battle Axe
+item.SteelWarHammer.name=Steel Warhammer

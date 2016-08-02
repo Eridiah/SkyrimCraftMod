@@ -64,5 +64,5 @@ public class SkyrimCraftEventHandler implements IWorldGenerator {
 		}
 		
 	}
-
+	
 }
