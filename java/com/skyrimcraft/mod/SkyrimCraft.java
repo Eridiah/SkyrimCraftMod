@@ -15,6 +15,7 @@ import com.skyrimcraft.mod.libs.SCDecs;
 import com.skyrimcraft.mod.libs.SCInits;
 import com.skyrimcraft.mod.libs.SCRegisters;
 import com.skyrimcraft.mod.proxy.CommonProxy;
+import com.skyrimcraft.mod.tileentity.TileEntitySmeltery;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -58,6 +59,7 @@ public class SkyrimCraft {
 		
 		RecipeRemover.RemoveVanillaRecipes();
 		RecipeRemover.RemoveChestRecipes();
+		GameRegistry.registerTileEntity(TileEntitySmeltery.class, "Smeltery");
 	}
 	
 	@EventHandler

@@ -1,7 +1,9 @@
 package com.skyrimcraft.mod.libs;
 
+import com.skyrimcraft.mod.SkyrimCraft;
 import com.skyrimcraft.mod.battleaxes.SCBattleAxes;
 import com.skyrimcraft.mod.blocks.SCOres;
+import com.skyrimcraft.mod.blocks.Smeltery;
 import com.skyrimcraft.mod.blocks.ToolForge;
 import com.skyrimcraft.mod.daggers.SCDaggers;
 import com.skyrimcraft.mod.greatswords.SCGreatSwords;
@@ -36,28 +38,40 @@ public class SCInits {
 		//Weapons
 		
 			//Iron
-			SCDecs.itemIronDagger = new SCDaggers(SCDecs.ironDagger).setUnlocalizedName("IronDagger");
-			SCDecs.itemIronSword = new SCSwords(SCDecs.ironSword).setUnlocalizedName("IronSword");
-			SCDecs.itemIronWarAxe = new SCWarAxes(SCDecs.ironWarAxe).setUnlocalizedName("IronWarAxe");
-			SCDecs.itemIronMace = new SCMaces(SCDecs.ironMace).setUnlocalizedName("IronMace");
-			SCDecs.itemIronGreatSword = new SCGreatSwords(SCDecs.ironGreatSword).setUnlocalizedName("IronGreatSword");
-			SCDecs.itemIronBattleAxe = new SCBattleAxes(SCDecs.ironBattleAxe).setUnlocalizedName("IronBattleAxe");
-			SCDecs.itemIronWarHammer = new SCWarHammers(SCDecs.ironWarHammer).setUnlocalizedName("IronWarHammer");
+			SCDecs.itemIronDagger = new SCDaggers(SCToolMaterials.ironDagger).setUnlocalizedName("IronDagger");
+			SCDecs.itemIronSword = new SCSwords(SCToolMaterials.ironSword).setUnlocalizedName("IronSword");
+			SCDecs.itemIronWarAxe = new SCWarAxes(SCToolMaterials.ironWarAxe).setUnlocalizedName("IronWarAxe");
+			SCDecs.itemIronMace = new SCMaces(SCToolMaterials.ironMace).setUnlocalizedName("IronMace");
+			SCDecs.itemIronGreatSword = new SCGreatSwords(SCToolMaterials.ironGreatSword).setUnlocalizedName("IronGreatSword");
+			SCDecs.itemIronBattleAxe = new SCBattleAxes(SCToolMaterials.ironBattleAxe).setUnlocalizedName("IronBattleAxe");
+			SCDecs.itemIronWarHammer = new SCWarHammers(SCToolMaterials.ironWarHammer).setUnlocalizedName("IronWarHammer");
 			
 			//Steel
-			SCDecs.itemSteelDagger = new SCDaggers(SCDecs.steelDagger).setUnlocalizedName("SteelDagger");
-			SCDecs.itemSteelSword = new SCSwords(SCDecs.steelSword).setUnlocalizedName("SteelSword");
-			SCDecs.itemSteelWarAxe = new SCWarAxes(SCDecs.steelWarAxe).setUnlocalizedName("SteelWarAxe");
-			SCDecs.itemSteelMace = new SCMaces(SCDecs.steelMace).setUnlocalizedName("SteelMace");
-			SCDecs.itemSteelGreatSword = new SCGreatSwords(SCDecs.steelGreatSword).setUnlocalizedName("SteelGreatSword");
-			SCDecs.itemSteelBattleAxe = new SCBattleAxes(SCDecs.steelBattleAxe).setUnlocalizedName("SteelBattleAxe");
-			SCDecs.itemSteelWarHammer = new SCWarHammers(SCDecs.steelWarHammer).setUnlocalizedName("SteelWarHammer");
+			SCDecs.itemSteelDagger = new SCDaggers(SCToolMaterials.steelDagger).setUnlocalizedName("SteelDagger");
+			SCDecs.itemSteelSword = new SCSwords(SCToolMaterials.steelSword).setUnlocalizedName("SteelSword");
+			SCDecs.itemSteelWarAxe = new SCWarAxes(SCToolMaterials.steelWarAxe).setUnlocalizedName("SteelWarAxe");
+			SCDecs.itemSteelMace = new SCMaces(SCToolMaterials.steelMace).setUnlocalizedName("SteelMace");
+			SCDecs.itemSteelGreatSword = new SCGreatSwords(SCToolMaterials.steelGreatSword).setUnlocalizedName("SteelGreatSword");
+			SCDecs.itemSteelBattleAxe = new SCBattleAxes(SCToolMaterials.steelBattleAxe).setUnlocalizedName("SteelBattleAxe");
+			SCDecs.itemSteelWarHammer = new SCWarHammers(SCToolMaterials.steelWarHammer).setUnlocalizedName("SteelWarHammer");
+			
+			//Orcish
+			SCDecs.itemOrcishDagger = new SCDaggers(SCToolMaterials.orcDagger).setUnlocalizedName("OrcishDagger");
+			SCDecs.itemOrcishSword = new SCSwords(SCToolMaterials.orcSword).setUnlocalizedName("OrcishSword");
+			SCDecs.itemOrcishWarAxe = new SCWarAxes(SCToolMaterials.orcWarAxe).setUnlocalizedName("OrcishWarAxe");
+			SCDecs.itemOrcishMace = new SCMaces(SCToolMaterials.orcMace).setUnlocalizedName("OrcishMace");
+			SCDecs.itemOrcishGreatSword = new SCGreatSwords(SCToolMaterials.orcGreatSword).setUnlocalizedName("OrcishGreatSword");
+			SCDecs.itemOrcishBattleAxe = new SCBattleAxes(SCToolMaterials.orcBattleAxe).setUnlocalizedName("OrcishBattleAxe");
+			SCDecs.itemOrcishWarHammer = new SCWarHammers(SCToolMaterials.orcWarHammer).setUnlocalizedName("OrcishWarHammer");
 	}
 	
 	public static void initBlocks() {
 		
 		//Blocks
 		SCDecs.blockToolForge = new ToolForge().setBlockName("ToolForge");
+		
+		SCDecs.blockSmelteryIdle = new Smeltery(false).setBlockName("SmelteryIdle").setCreativeTab(SkyrimCraft.tabSkyrimCraftBlocks).setHardness(3.5F);
+		SCDecs.blockSmelteryActive = new Smeltery(false).setBlockName("SmelteryActive").setHardness(3.5F);
 		
 		//Ores
 		SCDecs.blockSilverOre = new SCOres().setBlockName("SilverOre");

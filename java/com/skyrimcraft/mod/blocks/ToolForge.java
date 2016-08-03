@@ -28,13 +28,13 @@ public class ToolForge extends Block {
 	
 	@SideOnly(Side.CLIENT)
 	public IIcon getIcon(int side, int metadata) {
-		return side == 0 ? Blocks.cobblestone.getBlockTextureFromSide(side) : side == 1 ? this.toolForgeTop : this.blockIcon;
+		return side == 0 ? Blocks.stone.getBlockTextureFromSide(side) : side == 1 ? this.toolForgeTop : this.blockIcon;
 	}
 	
 	@SideOnly(Side.CLIENT)
 	public void registerBlockIcons (IIconRegister iconRegister) {
-		this.blockIcon = iconRegister.registerIcon(Reference.modID + ":" + "ToolStationSide");
-		this.toolForgeTop = iconRegister.registerIcon(Reference.modID + ":" + "ToolStationTop");
+		this.blockIcon = iconRegister.registerIcon(Reference.modID + ":" + "ToolForgeSide");
+		this.toolForgeTop = iconRegister.registerIcon(Reference.modID + ":" + "ToolForgeTop");
 	}
 	
 	public boolean onBlockActivated (World world, int x, int y, int z, EntityPlayer player, int q, float a, float b, float c) {
