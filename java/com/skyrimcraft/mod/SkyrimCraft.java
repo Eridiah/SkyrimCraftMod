@@ -24,6 +24,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkRegistry;
+import cpw.mods.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 @Mod(modid = Reference.modID, version = Reference.version, name = Reference.modName)
@@ -36,9 +37,10 @@ public class SkyrimCraft {
 	public static SkyrimCraft instance;
 	SkyrimCraftEventHandler handler = new SkyrimCraftEventHandler();
 	
+	public static SimpleNetworkWrapper network;
+	
 	@EventHandler
 	public void PreInit(FMLPreInitializationEvent preEvent) {
-		
 		SCInits.initItems();
 		SCInits.initBlocks();
 		SCRegisters.itemRegisters();
@@ -51,17 +53,16 @@ public class SkyrimCraft {
 
 	@EventHandler
 	public void Init(FMLInitializationEvent event) {
-		
 		CraftingRecipes.craftingRecipes();
 		SmeltingRecipes.smeltingRecipes();
-		
 		RecipeRemover.RemoveVanillaRecipes();
 		RecipeRemover.RemoveChestRecipes();
+		proxy.init(event);
 	}
 	
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent postEvent) {
-		
+		proxy.postInit(postEvent);
 	}
 	
 	public static CreativeTabs tabSkyrimCraftBlocks = new CreativeTabs("tabSkyrimCraftBlocks") {
