@@ -18,7 +18,7 @@ item.SteelIngot.name=Steel Ingot
 
 tile.ToolForge.name=Tool Forge
 
-tile.SmetleryIdle.name=Smelter
+tile.SmelteryIdle.name=Smelter
 tile.SmelteryActive.name=Smelter
 
 tile.SilverOre.name=Silver Ore
@@ -28,6 +28,14 @@ tile.OrichalcumOre.name=Orichalcum Ore
 tile.MalachiteOre.name=Malachite Ore
 tile.MoonStoneOre.name=Moonstone Ore
 tile.QuickSilverOre.name=Quicksilver Ore
+
+item.DwarvenDagger.name=Dwarven Dagger
+item.DwarvenSword.name=Dwarven Sword
+item.DwarvenWarAxe.name=Dwarven War Axe
+item.DwarvenMace.name=Dwarven Mace
+item.DwarvenGreatSword.name=Dwarven Greatsword
+item.DwarvenBattleAxe.name=Dwarven Battle Axe
+item.DwarvenWarHammer.name=Dwarven Warhammer
 
 item.OrcishDagger.name=Orcish Dagger
 item.OrcishSword.name=Orcish Sword

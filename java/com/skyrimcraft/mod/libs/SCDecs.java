@@ -15,10 +15,6 @@ public class SCDecs {
 	//Blocks
 		public static Block blockToolForge;
 		public static final int guiIDToolForge = 1;
-		
-		public static Block blockSmelteryIdle;
-		public static Block blockSmelteryActive;
-		public static final int guiIDSmeltery = 0;
 	
 	//Ingots
 		public static Item itemSilverIngot;
@@ -67,5 +63,19 @@ public class SCDecs {
 			public static Item itemOrcishGreatSword;
 			public static Item itemOrcishBattleAxe;
 			public static Item itemOrcishWarHammer;
+			
+		//Dwarven
+			public static Item itemDwarvenDagger;
+			public static Item itemDwarvenSword;
+			public static Item itemDwarvenWarAxe;
+			public static Item itemDwarvenMace;
+			public static Item itemDwarvenGreatSword;
+			public static Item itemDwarvenBattleAxe;
+			public static Item itemDwarvenWarHammer;
+			
+		//Bows
+			
+			//Maple
+				public static Item itemMapleBow;
 	
 }

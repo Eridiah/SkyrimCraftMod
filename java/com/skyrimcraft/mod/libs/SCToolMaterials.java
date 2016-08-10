@@ -32,4 +32,13 @@ public class SCToolMaterials {
 	static ToolMaterial orcBattleAxe = EnumHelper.addToolMaterial("orcBattleAxe", 2, 600, 7.0F, 3.3F, 10);
 	static ToolMaterial orcWarHammer = EnumHelper.addToolMaterial("orcWarHammer", 2, 600, 7.0F, 3.2F, 10);
 	
+	//Dwarven
+	static ToolMaterial dwarvenDagger = EnumHelper.addToolMaterial("dwarvenDagger", 2, 600, 7.0F, 2.8F, 10);
+	static ToolMaterial dwarvenSword = EnumHelper.addToolMaterial("dwarvenSword", 2, 600, 7.0F, 3.1F, 10);
+	static ToolMaterial dwarvenWarAxe = EnumHelper.addToolMaterial("dwarvenWarAxe", 2, 600, 7.0F, 3.3F, 10);
+	static ToolMaterial dwarvenMace = EnumHelper.addToolMaterial("dwarvenMace", 2, 600, 7.0F, 3.4F, 10);
+	static ToolMaterial dwarvenGreatSword = EnumHelper.addToolMaterial("dwarvenGreatSword", 2, 600, 7.0F, 3.5F, 10);
+	static ToolMaterial dwarvenBattleAxe = EnumHelper.addToolMaterial("dwarvenBattleAxe", 2, 600, 7.0F, 3.7F, 10);
+	static ToolMaterial dwarvenWarHammer = EnumHelper.addToolMaterial("dwarvenWarHammer", 2, 600, 7.0F, 3.9F, 10);
+	
 }

@@ -3,8 +3,8 @@ package com.skyrimcraft.mod.libs;
 import com.skyrimcraft.mod.SkyrimCraft;
 import com.skyrimcraft.mod.battleaxes.SCBattleAxes;
 import com.skyrimcraft.mod.blocks.SCOres;
-import com.skyrimcraft.mod.blocks.Smeltery;
 import com.skyrimcraft.mod.blocks.ToolForge;
+import com.skyrimcraft.mod.bows.MapleBow;
 import com.skyrimcraft.mod.daggers.SCDaggers;
 import com.skyrimcraft.mod.greatswords.SCGreatSwords;
 import com.skyrimcraft.mod.items.DaedraHeart;
@@ -63,15 +63,26 @@ public class SCInits {
 			SCDecs.itemOrcishGreatSword = new SCGreatSwords(SCToolMaterials.orcGreatSword).setUnlocalizedName("OrcishGreatSword");
 			SCDecs.itemOrcishBattleAxe = new SCBattleAxes(SCToolMaterials.orcBattleAxe).setUnlocalizedName("OrcishBattleAxe");
 			SCDecs.itemOrcishWarHammer = new SCWarHammers(SCToolMaterials.orcWarHammer).setUnlocalizedName("OrcishWarHammer");
+			
+			//Dwarven
+			SCDecs.itemDwarvenDagger = new SCDaggers(SCToolMaterials.dwarvenDagger).setUnlocalizedName("DwarvenDagger");
+			SCDecs.itemDwarvenSword = new SCDaggers(SCToolMaterials.dwarvenSword).setUnlocalizedName("DwarvenSword");
+			SCDecs.itemDwarvenWarAxe = new SCDaggers(SCToolMaterials.dwarvenWarAxe).setUnlocalizedName("DwarvenWarAxe");
+			SCDecs.itemDwarvenMace = new SCDaggers(SCToolMaterials.dwarvenMace).setUnlocalizedName("DwarvenMace");
+			SCDecs.itemDwarvenGreatSword = new SCDaggers(SCToolMaterials.dwarvenGreatSword).setUnlocalizedName("DwarvenGreatSword");
+			SCDecs.itemDwarvenBattleAxe = new SCDaggers(SCToolMaterials.dwarvenBattleAxe).setUnlocalizedName("DwarvenBattleAxe");
+			SCDecs.itemDwarvenWarHammer = new SCDaggers(SCToolMaterials.dwarvenWarHammer).setUnlocalizedName("DwarvenWarHammer");
+			
+			//Bow
+				
+				//Maple
+				SCDecs.itemMapleBow = new MapleBow().setUnlocalizedName("MapleBow");
 	}
 	
 	public static void initBlocks() {
 		
 		//Blocks
 		SCDecs.blockToolForge = new ToolForge().setBlockName("ToolForge");
-		
-		SCDecs.blockSmelteryIdle = new Smeltery(false).setBlockName("SmelteryIdle").setCreativeTab(SkyrimCraft.tabSkyrimCraftBlocks).setHardness(3.5F);
-		SCDecs.blockSmelteryActive = new Smeltery(false).setBlockName("SmelteryActive").setHardness(3.5F);
 		
 		//Ores
 		SCDecs.blockSilverOre = new SCOres().setBlockName("SilverOre");

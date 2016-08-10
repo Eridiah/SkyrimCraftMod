@@ -26,9 +26,6 @@ public class SCRegisters {
 		
 		//Blocks
 			GameRegistry.registerBlock(SCDecs.blockToolForge, "ToolForge");
-			
-			GameRegistry.registerBlock(SCDecs.blockSmelteryIdle, "SmelteryIdle");
-			GameRegistry.registerBlock(SCDecs.blockSmelteryActive, "SmelteryActive");
 		
 		//Ores
 			GameRegistry.registerBlock(SCDecs.blockSilverOre, "SilverOre");
@@ -68,6 +65,20 @@ public class SCRegisters {
 			GameRegistry.registerItem(SCDecs.itemOrcishGreatSword, "OrcishGreatSword");
 			GameRegistry.registerItem(SCDecs.itemOrcishBattleAxe, "OrcishBattleAxe");
 			GameRegistry.registerItem(SCDecs.itemOrcishWarHammer, "OrcishWarHammer");
+			
+		//Dwarven
+			GameRegistry.registerItem(SCDecs.itemDwarvenDagger, "DwarvenDagger");
+			GameRegistry.registerItem(SCDecs.itemDwarvenSword, "DwarvenSword");
+			GameRegistry.registerItem(SCDecs.itemDwarvenWarAxe, "DwarvenWarAxe");
+			GameRegistry.registerItem(SCDecs.itemDwarvenMace, "DwarvenMace");
+			GameRegistry.registerItem(SCDecs.itemDwarvenGreatSword, "DwarvenGreatSword");
+			GameRegistry.registerItem(SCDecs.itemDwarvenBattleAxe, "DwarvenBattleAxe");
+			GameRegistry.registerItem(SCDecs.itemDwarvenWarHammer, "DwarvenWarHammer");
+			
+		//Bows
+			
+			//Maple
+			GameRegistry.registerItem(SCDecs.itemMapleBow, "MapleBow");
 	}
 	
 }

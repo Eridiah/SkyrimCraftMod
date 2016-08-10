@@ -22,8 +22,6 @@ public class RecipeRemover {
 			if (is != null && is.getItem() == Items.iron_sword)
 				recipe.remove();
 		};
-		
-		RecipeRemover.RemoveChestRecipes();
 	}
 	
 	public static void RemoveChestRecipes() {
@@ -32,7 +30,5 @@ public class RecipeRemover {
 		ChestGenHooks.removeItem(ChestGenHooks.MINESHAFT_CORRIDOR, new ItemStack(Items.iron_sword));
 		ChestGenHooks.removeItem(ChestGenHooks.BONUS_CHEST, new ItemStack(Items.iron_sword));
 		ChestGenHooks.removeItem(ChestGenHooks.PYRAMID_DESERT_CHEST, new ItemStack(Items.iron_sword));
-		ChestGenHooks.removeItem(ChestGenHooks.VILLAGE_BLACKSMITH, new ItemStack(Items.iron_sword));
-	}
-	
+	}	
 }
