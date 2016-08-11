@@ -1,18 +1,19 @@
-package com.skyrimcraft.mod.swords;
+package com.skyrimcraft.mod.weapons;
 
 import net.minecraft.client.renderer.texture.IIconRegister;
-import net.minecraft.item.ItemSword;
+import net.minecraft.item.Item.ToolMaterial;
 
 import com.skyrimcraft.mod.SkyrimCraft;
+import com.skyrimcraft.mod.libs.ModWeapon;
 import com.skyrimcraft.mod.libs.Reference;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class SCSwords extends ItemSword {
+public class SCDaggers extends ModWeapon {
 
-	public SCSwords(ToolMaterial material) {
-		super(material);
+	public SCDaggers(ToolMaterial material) {
+		super(material, 2.5F);
 		
 		this.setFull3D();
 		this.setCreativeTab(SkyrimCraft.tabSkyrimCraftWeapons);

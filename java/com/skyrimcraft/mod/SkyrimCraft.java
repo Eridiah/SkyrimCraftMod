@@ -46,6 +46,7 @@ public class SkyrimCraft {
 		SCRegisters.itemRegisters();
 		SCRegisters.blockRegisters();
 		SCRegisters.weaponRegisters();
+		proxy.preInit(preEvent);
 		GameRegistry.registerWorldGenerator(handler, 0);
 		NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
 		

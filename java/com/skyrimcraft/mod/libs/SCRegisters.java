@@ -75,6 +75,62 @@ public class SCRegisters {
 			GameRegistry.registerItem(SCDecs.itemDwarvenBattleAxe, "DwarvenBattleAxe");
 			GameRegistry.registerItem(SCDecs.itemDwarvenWarHammer, "DwarvenWarHammer");
 			
+		//Elven
+			GameRegistry.registerItem(SCDecs.itemElvenDagger, "ElvenDagger");
+			GameRegistry.registerItem(SCDecs.itemElvenSword, "ElvenSword");
+			GameRegistry.registerItem(SCDecs.itemElvenWarAxe, "ElvenWarAxe");
+			GameRegistry.registerItem(SCDecs.itemElvenMace, "ElvenMace");
+			GameRegistry.registerItem(SCDecs.itemElvenGreatSword, "ElvenGreatSword");
+			GameRegistry.registerItem(SCDecs.itemElvenBattleAxe, "ElvenBattleAxe");
+			GameRegistry.registerItem(SCDecs.itemElvenWarHammer, "ElvenWarHammer");
+			
+		//Glass
+			GameRegistry.registerItem(SCDecs.itemGlassDagger, "GlassDagger");
+			GameRegistry.registerItem(SCDecs.itemGlassSword, "GlassSword");
+			GameRegistry.registerItem(SCDecs.itemGlassWarAxe, "GlassWarAxe");
+			GameRegistry.registerItem(SCDecs.itemGlassMace, "GlassMace");
+			GameRegistry.registerItem(SCDecs.itemGlassGreatSword, "GlassGreatSword");
+			GameRegistry.registerItem(SCDecs.itemGlassBattleAxe, "GlassBattleAxe");
+			GameRegistry.registerItem(SCDecs.itemGlassWarHammer, "GlassWarHammer");
+			
+		//Ebony
+			GameRegistry.registerItem(SCDecs.itemEbonyDagger, "EbonyDagger");
+			GameRegistry.registerItem(SCDecs.itemEbonySword, "EbonySword");
+			GameRegistry.registerItem(SCDecs.itemEbonyWarAxe, "EbonyWarAxe");
+			GameRegistry.registerItem(SCDecs.itemEbonyMace, "EbonyMace");
+			GameRegistry.registerItem(SCDecs.itemEbonyGreatSword, "EbonyGreatSword");
+			GameRegistry.registerItem(SCDecs.itemEbonyBattleAxe, "EbonyBattleAxe");
+			GameRegistry.registerItem(SCDecs.itemEbonyWarHammer, "EbonyWarHammer");
+			
+		//Stalhrim
+			GameRegistry.registerItem(SCDecs.itemStalhrimDagger, "StalhrimDagger");
+			GameRegistry.registerItem(SCDecs.itemStalhrimSword, "StalhrimSword");
+			GameRegistry.registerItem(SCDecs.itemStalhrimWarAxe, "StalhrimWarAxe");
+			GameRegistry.registerItem(SCDecs.itemStalhrimMace, "StalhrimMace");
+			GameRegistry.registerItem(SCDecs.itemStalhrimGreatSword, "StalhrimGreatSword");
+			GameRegistry.registerItem(SCDecs.itemStalhrimBattleAxe, "StalhrimBattleAxe");
+			GameRegistry.registerItem(SCDecs.itemStalhrimWarHammer, "StalhrimWarHammer");
+			
+		//Daedric
+			GameRegistry.registerItem(SCDecs.itemDaedricDagger, "DaedricDagger");
+			GameRegistry.registerItem(SCDecs.itemDaedricSword, "DaedricSword");
+			GameRegistry.registerItem(SCDecs.itemDaedricWarAxe, "DaedricWarAxe");
+			GameRegistry.registerItem(SCDecs.itemDaedricMace, "DaedricMace");
+			GameRegistry.registerItem(SCDecs.itemDaedricGreatSword, "DaedricGreatSword");
+			GameRegistry.registerItem(SCDecs.itemDaedricBattleAxe, "DaedricBattleAxe");
+			GameRegistry.registerItem(SCDecs.itemDaedricWarHammer, "DaedricWarHammer");
+			
+		//DragonBone
+			GameRegistry.registerItem(SCDecs.itemDragonBoneDagger, "DragonBoneDagger");
+			GameRegistry.registerItem(SCDecs.itemDragonBoneSword, "DragonBoneSword");
+			GameRegistry.registerItem(SCDecs.itemDragonBoneWarAxe, "DragonBoneWarAxe");
+			GameRegistry.registerItem(SCDecs.itemDragonBoneMace, "DragonBoneMace");
+			GameRegistry.registerItem(SCDecs.itemDragonBoneGreatSword, "DragonBoneGreatSword");
+			GameRegistry.registerItem(SCDecs.itemDragonBoneBattleAxe, "DragonBoneBattleAxe");
+			GameRegistry.registerItem(SCDecs.itemDragonBoneWarHammer, "DragonBoneWarHammer");
+			
+			
+			
 		//Bows
 			
 			//Maple

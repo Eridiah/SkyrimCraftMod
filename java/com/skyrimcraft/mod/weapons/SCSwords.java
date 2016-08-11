@@ -1,18 +1,19 @@
-package com.skyrimcraft.mod.warhammers;
+package com.skyrimcraft.mod.weapons;
 
 import net.minecraft.client.renderer.texture.IIconRegister;
-import net.minecraft.item.ItemSword;
+import net.minecraft.item.Item.ToolMaterial;
 
 import com.skyrimcraft.mod.SkyrimCraft;
+import com.skyrimcraft.mod.libs.ModWeapon;
 import com.skyrimcraft.mod.libs.Reference;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class SCWarHammers extends ItemSword {
+public class SCSwords extends ModWeapon {
 
-	public SCWarHammers(ToolMaterial material) {
-		super(material);
+	public SCSwords(ToolMaterial material) {
+		super(material, 4.0F);
 		
 		this.setFull3D();
 		this.setCreativeTab(SkyrimCraft.tabSkyrimCraftWeapons);
@@ -22,6 +23,5 @@ public class SCWarHammers extends ItemSword {
 	public void registerIcons(IIconRegister iconRegister) {
 		this.itemIcon = iconRegister.registerIcon(Reference.modID + ":" + this.getUnlocalizedName().substring(5));
 	}
-	
 	
 }

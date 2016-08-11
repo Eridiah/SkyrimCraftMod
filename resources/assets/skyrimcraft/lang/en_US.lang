@@ -29,6 +29,56 @@ tile.MalachiteOre.name=Malachite Ore
 tile.MoonStoneOre.name=Moonstone Ore
 tile.QuickSilverOre.name=Quicksilver Ore
 
+item.MapleBow.name=Maple Bow
+
+item.DragonBoneDagger.name=DragonBone Dagger
+item.DragonBoneSword.name=DragonBone Sword
+item.DragonBoneWarAxe.name=DragonBone War Axe
+item.DragonBoneMace.name=DragonBone Mace
+item.DragonBoneGreatSword.name=DragonBone Greatsword
+item.DragonBoneBattleAxe.name=DragonBone Battle Axe
+item.DragonBoneWarHammer.name=DragonBone Warhammer
+
+item.DaedricDagger.name=Daedric Dagger
+item.DaedricSword.name=Daedric Sword
+item.DaedricWarAxe.name=Daedric War Axe
+item.DaedricMace.name=Daedric Mace
+item.DaedricGreatSword.name=Daedric Greatsword
+item.DaedricBattleAxe.name=Daedric Battle Axe
+item.DaedricWarHammer.name=Daedric Warhammer
+
+item.StalhrimDagger.name=Stalhrim Dagger
+item.StalhrimSword.name=Stalhrim Sword
+item.StalhrimWarAxe.name=Stalhrim War Axe
+item.StalhrimMace.name=Stalhrim Mace
+item.StalhrimGreatSword.name=Stalhrim Greatsword
+item.StalhrimBattleAxe.name=Stalhrim Battle Axe
+item.StalhrimWarHammer.name=Stalhrim Warhammer
+
+item.EbonyDagger.name=Ebony Dagger
+item.EbonySword.name=Ebony Sword
+item.EbonyWarAxe.name=Ebony War Axe
+item.EbonyMace.name=Ebony Mace
+item.EbonyGreatSword.name=Ebony Greatsword
+item.EbonyBattleAxe.name=Ebony Battle Axe
+item.EbonyWarHammer.name=Ebony Warhammer
+
+item.GlassDagger.name=Glass Dagger
+item.GlassSword.name=Glass Sword
+item.GlassWarAxe.name=Glass War Axe
+item.GlassMace.name=Glass Mace
+item.GlassGreatSword.name=Glass Greatsword
+item.GlassBattleAxe.name=Glass Battle Axe
+item.GlassWarHammer.name=Glass Warhammer
+
+item.ElvenDagger.name=Elven Dagger
+item.ElvenSword.name=Elven Sword
+item.ElvenWarAxe.name=Elven War Axe
+item.ElvenMace.name=Elven Mace
+item.ElvenGreatSword.name=Elven Greatsword
+item.ElvenBattleAxe.name=Elven Battle Axe
+item.ElvenWarHammer.name=Elven Warhammer
+
 item.DwarvenDagger.name=Dwarven Dagger
 item.DwarvenSword.name=Dwarven Sword
 item.DwarvenWarAxe.name=Dwarven War Axe

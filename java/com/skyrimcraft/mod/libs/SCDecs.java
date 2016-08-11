@@ -73,9 +73,63 @@ public class SCDecs {
 			public static Item itemDwarvenBattleAxe;
 			public static Item itemDwarvenWarHammer;
 			
-		//Bows
+		//Elven
+			public static Item itemElvenDagger;
+			public static Item itemElvenSword;
+			public static Item itemElvenWarAxe;
+			public static Item itemElvenMace;
+			public static Item itemElvenGreatSword;
+			public static Item itemElvenBattleAxe;
+			public static Item itemElvenWarHammer;
 			
-			//Maple
-				public static Item itemMapleBow;
+		//Glass
+			public static Item itemGlassDagger;
+			public static Item itemGlassSword;
+			public static Item itemGlassWarAxe;
+			public static Item itemGlassMace;
+			public static Item itemGlassGreatSword;
+			public static Item itemGlassBattleAxe;
+			public static Item itemGlassWarHammer;
+			
+		//Ebony
+			public static Item itemEbonyDagger;
+			public static Item itemEbonySword;
+			public static Item itemEbonyWarAxe;
+			public static Item itemEbonyMace;
+			public static Item itemEbonyGreatSword;
+			public static Item itemEbonyBattleAxe;
+			public static Item itemEbonyWarHammer;
+			
+		//Stalhrim
+			public static Item itemStalhrimDagger;
+			public static Item itemStalhrimSword;
+			public static Item itemStalhrimWarAxe;
+			public static Item itemStalhrimMace;
+			public static Item itemStalhrimGreatSword;
+			public static Item itemStalhrimBattleAxe;
+			public static Item itemStalhrimWarHammer;
+		
+		//Daedric
+			public static Item itemDaedricDagger;
+			public static Item itemDaedricSword;
+			public static Item itemDaedricWarAxe;
+			public static Item itemDaedricMace;
+			public static Item itemDaedricGreatSword;
+			public static Item itemDaedricBattleAxe;
+			public static Item itemDaedricWarHammer;
+			
+		//DragonBone
+			public static Item itemDragonBoneDagger;
+			public static Item itemDragonBoneSword;
+			public static Item itemDragonBoneWarAxe;
+			public static Item itemDragonBoneMace;
+			public static Item itemDragonBoneGreatSword;
+			public static Item itemDragonBoneBattleAxe;
+			public static Item itemDragonBoneWarHammer;
+			
+	//Bows
+		
+		//Maple
+			public static Item itemMapleBow;
 	
 }

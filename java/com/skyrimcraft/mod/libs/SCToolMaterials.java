@@ -5,40 +5,15 @@ import net.minecraftforge.common.util.EnumHelper;
 
 public class SCToolMaterials {
 	
-	//Iron
-	static ToolMaterial ironDagger = EnumHelper.addToolMaterial("ironDagger", 2, 600, 7.0F, 1.6F, 10);
-	static ToolMaterial ironSword = EnumHelper.addToolMaterial("ironSword", 2, 600, 7.0F, 2.0F, 10);
-	static ToolMaterial ironWarAxe = EnumHelper.addToolMaterial("ironWarAxe", 2, 600, 7.0F, 2.1F, 10);
-	static ToolMaterial ironMace = EnumHelper.addToolMaterial("ironMace", 2, 600, 7.0F, 2.2F, 10);
-	static ToolMaterial ironGreatSword = EnumHelper.addToolMaterial("ironLongSword", 2, 600, 7.0F, 2.5F, 10);
-	static ToolMaterial ironBattleAxe = EnumHelper.addToolMaterial("ironBattleAxe", 2, 600, 7.0F, 2.7F, 10);
-	static ToolMaterial ironWarHammer = EnumHelper.addToolMaterial("ironWarHammer", 2, 600, 7.0F, 2.6F, 10);
-
-	//Steel
-	static ToolMaterial steelDagger = EnumHelper.addToolMaterial("steelDagger", 2, 600, 7.0F, 1.9F, 10);
-	static ToolMaterial steelSword = EnumHelper.addToolMaterial("steelSword", 2, 600, 7.0F, 2.5F, 10);
-	static ToolMaterial steelWarAxe = EnumHelper.addToolMaterial("steelWarAxe", 2, 600, 7.0F, 3.0F, 10);
-	static ToolMaterial steelMace = EnumHelper.addToolMaterial("steelMace", 2, 600, 7.0F, 2.8F, 10);
-	static ToolMaterial steelGreatSword = EnumHelper.addToolMaterial("steelLongSword", 2, 600, 7.0F, 3.5F, 10);
-	static ToolMaterial steelBattleAxe = EnumHelper.addToolMaterial("steelBattleAxe", 2, 600, 7.0F, 3.7F, 10);
-	static ToolMaterial steelWarHammer = EnumHelper.addToolMaterial("steelWarHammer", 2, 600, 7.0F, 3.6F, 10);
-	
-	//Orcish
-	static ToolMaterial orcDagger = EnumHelper.addToolMaterial("orcDagger", 2, 600, 7.0F, 2.5F, 10);
-	static ToolMaterial orcSword = EnumHelper.addToolMaterial("orcSword", 2, 600, 7.0F, 2.8F, 10);
-	static ToolMaterial orcWarAxe = EnumHelper.addToolMaterial("orcWarAxe", 2, 600, 7.0F, 3.0F, 10);
-	static ToolMaterial orcMace = EnumHelper.addToolMaterial("orcMace", 2, 600, 7.0F, 2.9F, 10);
-	static ToolMaterial orcGreatSword = EnumHelper.addToolMaterial("orcGreatSword", 2, 600, 7.0F, 3.1F, 10);
-	static ToolMaterial orcBattleAxe = EnumHelper.addToolMaterial("orcBattleAxe", 2, 600, 7.0F, 3.3F, 10);
-	static ToolMaterial orcWarHammer = EnumHelper.addToolMaterial("orcWarHammer", 2, 600, 7.0F, 3.2F, 10);
-	
-	//Dwarven
-	static ToolMaterial dwarvenDagger = EnumHelper.addToolMaterial("dwarvenDagger", 2, 600, 7.0F, 2.8F, 10);
-	static ToolMaterial dwarvenSword = EnumHelper.addToolMaterial("dwarvenSword", 2, 600, 7.0F, 3.1F, 10);
-	static ToolMaterial dwarvenWarAxe = EnumHelper.addToolMaterial("dwarvenWarAxe", 2, 600, 7.0F, 3.3F, 10);
-	static ToolMaterial dwarvenMace = EnumHelper.addToolMaterial("dwarvenMace", 2, 600, 7.0F, 3.4F, 10);
-	static ToolMaterial dwarvenGreatSword = EnumHelper.addToolMaterial("dwarvenGreatSword", 2, 600, 7.0F, 3.5F, 10);
-	static ToolMaterial dwarvenBattleAxe = EnumHelper.addToolMaterial("dwarvenBattleAxe", 2, 600, 7.0F, 3.7F, 10);
-	static ToolMaterial dwarvenWarHammer = EnumHelper.addToolMaterial("dwarvenWarHammer", 2, 600, 7.0F, 3.9F, 10);
+	static ToolMaterial IRON_MATERIAL = EnumHelper.addToolMaterial("ironMaterial", 2, 600, 7.0F, 2.0F, 10);
+	static ToolMaterial STEEL_MATERIAL = EnumHelper.addToolMaterial("steelMaterial", 2, 600, 7.0F, 3.0F, 10);
+	static ToolMaterial ORCISH_MATERIAL = EnumHelper.addToolMaterial("orcishMaterial", 2, 600, 7.0F,4.0F, 10);
+	static ToolMaterial DWARVEN_MATERIAL = EnumHelper.addToolMaterial("dwarvenMaterial", 2, 600, 7.0F, 6.0F, 10);
+	static ToolMaterial ELVEN_MATERIAL = EnumHelper.addToolMaterial("dwarvenMaterial", 2, 600, 7.0F, 7.0F, 10);
+	static ToolMaterial GLASS_MATERIAL = EnumHelper.addToolMaterial("dwarvenMaterial", 2, 600, 7.0F, 8.0F, 10);
+	static ToolMaterial EBONY_MATERIAL = EnumHelper.addToolMaterial("dwarvenMaterial", 2, 600, 7.0F, 10.0F, 10);
+	static ToolMaterial STALHRIM_MATERIAL = EnumHelper.addToolMaterial("dwarvenMaterial", 2, 600, 7.0F, 11.0F, 10);
+	static ToolMaterial DAEDRIC_MATERIAL = EnumHelper.addToolMaterial("dwarvenMaterial", 2, 600, 7.0F, 12.0F, 10);
+	static ToolMaterial DRAGONBONE_MATERIAL = EnumHelper.addToolMaterial("dwarvenMaterial", 2, 600, 7.0F, 14.0F, 10);
 	
 }
