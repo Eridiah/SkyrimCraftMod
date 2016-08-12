@@ -1,9 +1,8 @@
 package com.skyrimcraft.mod.weapons;
 
 import net.minecraft.client.renderer.texture.IIconRegister;
-import net.minecraft.item.Item.ToolMaterial;
 
-import com.skyrimcraft.mod.SkyrimCraft;
+import com.skyrimcraft.mod.creativetabs.SkyrimCraftTabs;
 import com.skyrimcraft.mod.libs.ModWeapon;
 import com.skyrimcraft.mod.libs.Reference;
 
@@ -16,7 +15,7 @@ public class SCGreatSwords extends ModWeapon {
 		super(material, 8.5F);
 		
 		this.setFull3D();
-		this.setCreativeTab(SkyrimCraft.tabSkyrimCraftWeapons);
+		this.setCreativeTab(SkyrimCraftTabs.tabSkyrimCraftWeapons);
 	}
 
 	@SideOnly(Side.CLIENT)

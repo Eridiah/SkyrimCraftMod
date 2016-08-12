@@ -1,6 +1,5 @@
 package com.skyrimcraft.mod.libs;
 
-import com.skyrimcraft.mod.SkyrimCraft;
 import com.skyrimcraft.mod.blocks.SCOres;
 import com.skyrimcraft.mod.blocks.ToolForge;
 import com.skyrimcraft.mod.bows.MapleBow;
@@ -8,6 +7,10 @@ import com.skyrimcraft.mod.items.DaedraHeart;
 import com.skyrimcraft.mod.items.DaedraHeartReg;
 import com.skyrimcraft.mod.items.SCIngots;
 import com.skyrimcraft.mod.items.SCItem;
+import com.skyrimcraft.mod.special_weapons.Chillrend;
+import com.skyrimcraft.mod.special_weapons.Dawnbreaker;
+import com.skyrimcraft.mod.special_weapons.Dragonbane;
+import com.skyrimcraft.mod.special_weapons.GauldurBlackBlade;
 import com.skyrimcraft.mod.weapons.SCBattleAxes;
 import com.skyrimcraft.mod.weapons.SCDaggers;
 import com.skyrimcraft.mod.weapons.SCGreatSwords;
@@ -131,6 +134,15 @@ public class SCInits {
 				
 				//Maple
 				SCDecs.itemMapleBow = new MapleBow().setUnlocalizedName("MapleBow");
+				
+				
+			//Special Weapons
+				
+				//Swords
+				SCDecs.itemChillrend = new Chillrend(SCToolMaterials.GLASS_MATERIAL).setUnlocalizedName("ChillRend");
+				SCDecs.itemDawnbreaker = new Dawnbreaker(SCToolMaterials.EBONY_MATERIAL).setUnlocalizedName("DawnBreaker");
+				SCDecs.itemDragonbane = new Dragonbane(SCToolMaterials.NORDIC_MATERIAL).setUnlocalizedName("DragonBane");
+				SCDecs.itemGauldurBlackBlade = new GauldurBlackBlade(SCToolMaterials.NORDIC_MATERIAL).setUnlocalizedName("BlackBlade");
 	}
 	
 	public static void initBlocks() {

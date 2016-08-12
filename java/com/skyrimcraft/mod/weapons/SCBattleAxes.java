@@ -1,10 +1,9 @@
 package com.skyrimcraft.mod.weapons;
 
 import net.minecraft.client.renderer.texture.IIconRegister;
-import net.minecraft.item.Item.ToolMaterial;
 
 import com.skyrimcraft.mod.IExtendedReach;
-import com.skyrimcraft.mod.SkyrimCraft;
+import com.skyrimcraft.mod.creativetabs.SkyrimCraftTabs;
 import com.skyrimcraft.mod.libs.ModWeapon;
 import com.skyrimcraft.mod.libs.Reference;
 
@@ -17,7 +16,7 @@ public class SCBattleAxes extends ModWeapon implements IExtendedReach {
 		super(material, 9.0F);
 		
 		this.setFull3D();
-		this.setCreativeTab(SkyrimCraft.tabSkyrimCraftWeapons);
+		this.setCreativeTab(SkyrimCraftTabs.tabSkyrimCraftWeapons);
 	}
 	
 	@SideOnly(Side.CLIENT)

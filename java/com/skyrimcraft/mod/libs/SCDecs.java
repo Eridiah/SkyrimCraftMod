@@ -131,5 +131,13 @@ public class SCDecs {
 		
 		//Maple
 			public static Item itemMapleBow;
+			
+	//Special Weapons
+			
+		//Swords
+			public static Item itemChillrend;
+			public static Item itemDawnbreaker;
+			public static Item itemDragonbane;
+			public static Item itemGauldurBlackBlade;
 	
 }

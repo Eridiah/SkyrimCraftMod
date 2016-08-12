@@ -3,6 +3,11 @@ itemGroup.tabSkyrimCraftBlocks=SkyrimCraft Blocks
 itemGroup.tabSkyrimCraftMaterials=SkyrimCraft Materials
 itemGroup.tabSkyrimCraftWeapons=SkyrimCraft Weapons
 
+enchantment.absorbHealthEnchantment=Absorb Health
+enchantment.shockEnchantment=Shock
+enchantment.meridiasRetribution=Meridia's Retribution
+enchantment.frostEnchantment=Frost
+
 item.DaedraHeart.name=Daedra Heart
 item.DaedraHeartReg.name=Daedra Heart
 item.LeatherStraps.name=Leather Straps
@@ -28,6 +33,11 @@ tile.OrichalcumOre.name=Orichalcum Ore
 tile.MalachiteOre.name=Malachite Ore
 tile.MoonStoneOre.name=Moonstone Ore
 tile.QuickSilverOre.name=Quicksilver Ore
+
+item.BlackBlade.name=Gauldur Blackblade
+item.DragonBane.name=Dragonbane
+item.DawnBreaker.name=Dawnbreaker
+item.ChillRend.name=Chillrend
 
 item.MapleBow.name=Maple Bow
 

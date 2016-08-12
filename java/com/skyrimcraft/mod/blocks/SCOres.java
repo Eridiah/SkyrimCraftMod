@@ -4,7 +4,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 
-import com.skyrimcraft.mod.SkyrimCraft;
+import com.skyrimcraft.mod.creativetabs.SkyrimCraftTabs;
 import com.skyrimcraft.mod.libs.Reference;
 
 import cpw.mods.fml.relauncher.Side;
@@ -19,7 +19,7 @@ public class SCOres extends Block {
 		this.setResistance(5.0F);
 		this.setHarvestLevel("pickaxe", 2);
 		this.setStepSound(soundTypeStone);
-		this.setCreativeTab(SkyrimCraft.tabSkyrimCraftMaterials);
+		this.setCreativeTab(SkyrimCraftTabs.tabSkyrimCraftMaterials);
 	}
 	
 	@SideOnly(Side.CLIENT)

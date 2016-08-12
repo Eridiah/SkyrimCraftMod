@@ -9,6 +9,7 @@ import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
 
 import com.skyrimcraft.mod.SkyrimCraft;
+import com.skyrimcraft.mod.creativetabs.SkyrimCraftTabs;
 import com.skyrimcraft.mod.libs.Reference;
 import com.skyrimcraft.mod.libs.SCDecs;
 
@@ -23,7 +24,7 @@ public class ToolForge extends Block {
 	public ToolForge() {
 		super(Material.rock);
 		
-		this.setCreativeTab(SkyrimCraft.tabSkyrimCraftBlocks);
+		this.setCreativeTab(SkyrimCraftTabs.tabSkyrimCraftBlocks);
 	}
 	
 	@SideOnly(Side.CLIENT)

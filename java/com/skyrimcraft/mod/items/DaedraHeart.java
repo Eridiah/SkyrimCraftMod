@@ -5,7 +5,7 @@ import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 
-import com.skyrimcraft.mod.SkyrimCraft;
+import com.skyrimcraft.mod.creativetabs.SkyrimCraftTabs;
 import com.skyrimcraft.mod.libs.Reference;
 
 import cpw.mods.fml.relauncher.Side;
@@ -16,7 +16,7 @@ public class DaedraHeart extends ItemFood {
 	public DaedraHeart(int food, float saturation, boolean wolfFood) {
 		super(food, saturation, wolfFood);
 		this.setPotionEffect(Potion.poison.id, 5, 0, 0.7F);
-		this.setCreativeTab(SkyrimCraft.tabSkyrimCraftItems);
+		this.setCreativeTab(SkyrimCraftTabs.tabSkyrimCraftItems);
 	}
 	
     public boolean hasEffect(ItemStack itemstack)

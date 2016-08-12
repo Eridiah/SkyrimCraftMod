@@ -15,7 +15,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.player.ArrowLooseEvent;
 import net.minecraftforge.event.entity.player.ArrowNockEvent;
 
-import com.skyrimcraft.mod.SkyrimCraft;
+import com.skyrimcraft.mod.creativetabs.SkyrimCraftTabs;
 import com.skyrimcraft.mod.libs.Reference;
 
 import cpw.mods.fml.relauncher.Side;
@@ -33,7 +33,7 @@ public class MapleBow extends Item {
 		this.setFull3D();
 		this.setMaxStackSize(1);
 		this.setMaxDamage(390);
-		this.setCreativeTab(SkyrimCraft.tabSkyrimCraftWeapons);
+		this.setCreativeTab(SkyrimCraftTabs.tabSkyrimCraftWeapons);
 	}
 	
 	@Override

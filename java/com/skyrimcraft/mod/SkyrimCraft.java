@@ -1,6 +1,7 @@
 package com.skyrimcraft.mod;
 
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.enchantment.Enchantment;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -8,6 +9,10 @@ import net.minecraft.item.ItemStack;
 import com.skyrimcraft.mod.crafting.CraftingRecipes;
 import com.skyrimcraft.mod.crafting.RecipeRemover;
 import com.skyrimcraft.mod.crafting.SmeltingRecipes;
+import com.skyrimcraft.mod.enchantments.EnchantmentAbsorbHealth;
+import com.skyrimcraft.mod.enchantments.EnchantmentFrost;
+import com.skyrimcraft.mod.enchantments.EnchantmentMeridiasRetribution;
+import com.skyrimcraft.mod.enchantments.EnchantmentShock;
 import com.skyrimcraft.mod.handler.GuiHandler;
 import com.skyrimcraft.mod.handler.SkyrimCraftEventHandler;
 import com.skyrimcraft.mod.libs.Reference;
@@ -39,6 +44,11 @@ public class SkyrimCraft {
 	
 	public static SimpleNetworkWrapper network;
 	
+	public static final Enchantment frostEnchantment = new EnchantmentFrost(84, 0);
+	public static final Enchantment meridiasRetribution = new EnchantmentMeridiasRetribution(85, 0);
+	public static final Enchantment shockEnchantment = new EnchantmentShock(86, 0);
+	public static final Enchantment absorbHealthEnchantment = new EnchantmentAbsorbHealth(87, 0);
+	
 	@EventHandler
 	public void PreInit(FMLPreInitializationEvent preEvent) {
 		SCInits.initItems();
@@ -65,32 +75,4 @@ public class SkyrimCraft {
 	public void postInit(FMLPostInitializationEvent postEvent) {
 		proxy.postInit(postEvent);
 	}
-	
-	public static CreativeTabs tabSkyrimCraftBlocks = new CreativeTabs("tabSkyrimCraftBlocks") {
-		@Override
-		public Item getTabIconItem() {
-			return new ItemStack(Blocks.crafting_table).getItem();
-		}
-	};
-	
-	public static CreativeTabs tabSkyrimCraftItems = new CreativeTabs("tabSkyrimCraftItems") {
-		@Override
-		public Item getTabIconItem() {
-			return SCDecs.itemDaedraHeartReg;
-		}
-	};
-	
-	public static CreativeTabs tabSkyrimCraftMaterials = new CreativeTabs("tabSkyrimCraftMaterials") {
-		@Override
-		public Item getTabIconItem() {
-			return SCDecs.itemCorundumIngot;
-		}
-	};
-	
-	public static CreativeTabs tabSkyrimCraftWeapons = new CreativeTabs("tabSkyrimCraftWeapons") {
-		@Override
-		public Item getTabIconItem() {
-			return SCDecs.itemIronBattleAxe;
-		}
-	};
 }

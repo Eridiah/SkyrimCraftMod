@@ -135,6 +135,15 @@ public class SCRegisters {
 			
 			//Maple
 			GameRegistry.registerItem(SCDecs.itemMapleBow, "MapleBow");
+			
+			
+		//Special Weapons
+			
+			//Swords
+			GameRegistry.registerItem(SCDecs.itemChillrend, "ChillRend");
+			GameRegistry.registerItem(SCDecs.itemDawnbreaker, "DawnBreaker");
+			GameRegistry.registerItem(SCDecs.itemDragonbane, "DragonBane");
+			GameRegistry.registerItem(SCDecs.itemGauldurBlackBlade, "BlackBlade");
 	}
 	
 }
