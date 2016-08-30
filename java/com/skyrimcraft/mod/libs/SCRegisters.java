@@ -143,7 +143,7 @@ public class SCRegisters {
 			GameRegistry.registerItem(SCDecs.itemChillrend, "ChillRend");
 			GameRegistry.registerItem(SCDecs.itemDawnbreaker, "DawnBreaker");
 			GameRegistry.registerItem(SCDecs.itemDragonbane, "DragonBane");
-			GameRegistry.registerItem(SCDecs.itemGauldurBlackBlade, "BlackBlade");
+			GameRegistry.registerItem(SCDecs.itemGrimsever, "GrimSever");
 	}
 	
 }

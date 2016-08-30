@@ -1,7 +1,8 @@
 package com.skyrimcraft.mod.proxy;
 
-import net.minecraft.client.Minecraft;
+import com.skyrimcraft.mod.ServerTickHandler;
 
+import net.minecraft.client.Minecraft;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
@@ -17,6 +18,8 @@ public class ClientProxy extends CommonProxy {
 	@Override
 	public void init(FMLInitializationEvent event) {
 		super.init(event);
+		
+		FMLCommonHandler.instance().bus().register(new ServerTickHandler(Minecraft.getMinecraft()));
 		
 	}
 	

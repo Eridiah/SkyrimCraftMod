@@ -138,6 +138,6 @@ public class SCDecs {
 			public static Item itemChillrend;
 			public static Item itemDawnbreaker;
 			public static Item itemDragonbane;
-			public static Item itemGauldurBlackBlade;
+			public static Item itemGrimsever;
 	
 }

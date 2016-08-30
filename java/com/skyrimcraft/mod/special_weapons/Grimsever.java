@@ -13,10 +13,10 @@ import com.skyrimcraft.mod.libs.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class GauldurBlackBlade extends ModWeapon {
+public class Grimsever extends ModWeapon {
 
-	public GauldurBlackBlade(ToolMaterial material) {
-		super(material, 5.0F);
+	public Grimsever(ToolMaterial material) {
+		super(material, 6.0F);
 		
 		this.setCreativeTab(SkyrimCraftTabs.tabSkyrimCraftWeapons);
 	}
@@ -25,14 +25,16 @@ public class GauldurBlackBlade extends ModWeapon {
 		super.onUpdate(stack, world, entity, i, bool);
 		
 		if(stack.isItemEnchanted() == false) {
-			stack.addEnchantment(SkyrimCraft.absorbHealthEnchantment, 1);
+			stack.addEnchantment(SkyrimCraft.frostEnchantment, 2);
 			super.onUpdate(stack, world, entity, i, bool);
 		}
 	}
 	
 	@SideOnly(Side.CLIENT)
-	public void registerIcon(IIconRegister iconRegister) {
+	public void registerIcons(IIconRegister iconRegister) {
 		this.itemIcon = iconRegister.registerIcon(Reference.modID + ":" + this.getUnlocalizedName().substring(5));
 	}
+
+	
 	
 }

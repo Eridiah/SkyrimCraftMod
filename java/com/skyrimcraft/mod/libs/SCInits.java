@@ -10,7 +10,7 @@ import com.skyrimcraft.mod.items.SCItem;
 import com.skyrimcraft.mod.special_weapons.Chillrend;
 import com.skyrimcraft.mod.special_weapons.Dawnbreaker;
 import com.skyrimcraft.mod.special_weapons.Dragonbane;
-import com.skyrimcraft.mod.special_weapons.GauldurBlackBlade;
+import com.skyrimcraft.mod.special_weapons.Grimsever;
 import com.skyrimcraft.mod.weapons.SCBattleAxes;
 import com.skyrimcraft.mod.weapons.SCDaggers;
 import com.skyrimcraft.mod.weapons.SCGreatSwords;
@@ -142,7 +142,7 @@ public class SCInits {
 				SCDecs.itemChillrend = new Chillrend(SCToolMaterials.GLASS_MATERIAL).setUnlocalizedName("ChillRend");
 				SCDecs.itemDawnbreaker = new Dawnbreaker(SCToolMaterials.EBONY_MATERIAL).setUnlocalizedName("DawnBreaker");
 				SCDecs.itemDragonbane = new Dragonbane(SCToolMaterials.NORDIC_MATERIAL).setUnlocalizedName("DragonBane");
-				SCDecs.itemGauldurBlackBlade = new GauldurBlackBlade(SCToolMaterials.NORDIC_MATERIAL).setUnlocalizedName("BlackBlade");
+				SCDecs.itemGrimsever = new Grimsever(SCToolMaterials.GLASS_MATERIAL).setUnlocalizedName("GrimSever");
 	}
 	
 	public static void initBlocks() {

@@ -1,16 +1,16 @@
 package com.skyrimcraft.mod.libs;
 
-import com.skyrimcraft.mod.SkyrimCraft;
-
-import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemSword;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 
-public class ModWeapon extends ItemSword {
+import com.skyrimcraft.mod.SkyrimCraft;
+import com.skyrimcraft.mod.weapons.ModSwordBase;
+
+public class ModWeapon extends ModSwordBase {
 
 	private float weaponDamage;
 	
@@ -21,11 +21,10 @@ public class ModWeapon extends ItemSword {
 	}
 
 	@Override
-	public boolean hitEntity(ItemStack stack, EntityLivingBase entity, EntityLivingBase entityLiving) {
+	public boolean hitEntity(ItemStack stack, EntityLivingBase entity, EntityLivingBase entityLiving, EntityPlayer player) {
 		int i = EnchantmentHelper.getEnchantmentLevel(SkyrimCraft.shockEnchantment.effectId, stack);
 		int j = EnchantmentHelper.getEnchantmentLevel(SkyrimCraft.meridiasRetribution.effectId, stack);
 		int k = EnchantmentHelper.getEnchantmentLevel(SkyrimCraft.frostEnchantment.effectId, stack);
-		int l = EnchantmentHelper.getEnchantmentLevel(SkyrimCraft.absorbHealthEnchantment.effectId, stack);
 		
 		if(i > 0) {
 			entity.addPotionEffect(new PotionEffect(Potion.poison.id, 20 * i));
@@ -37,10 +36,6 @@ public class ModWeapon extends ItemSword {
 		
 		if(k > 0) {
 			entity.addPotionEffect(new PotionEffect(Potion.poison.id, 20 * k));
-		}
-		
-		if(l > 0) {
-			entity.addPotionEffect(new PotionEffect(Potion.heal.id, 2 * l));
 		}
 		
 		return true;

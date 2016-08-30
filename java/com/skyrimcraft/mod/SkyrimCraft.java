@@ -1,24 +1,19 @@
 package com.skyrimcraft.mod;
 
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.enchantment.Enchantment;
-import net.minecraft.init.Blocks;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 
 import com.skyrimcraft.mod.crafting.CraftingRecipes;
 import com.skyrimcraft.mod.crafting.RecipeRemover;
 import com.skyrimcraft.mod.crafting.SmeltingRecipes;
-import com.skyrimcraft.mod.enchantments.EnchantmentAbsorbHealth;
 import com.skyrimcraft.mod.enchantments.EnchantmentFrost;
 import com.skyrimcraft.mod.enchantments.EnchantmentMeridiasRetribution;
 import com.skyrimcraft.mod.enchantments.EnchantmentShock;
 import com.skyrimcraft.mod.handler.GuiHandler;
 import com.skyrimcraft.mod.handler.SkyrimCraftEventHandler;
 import com.skyrimcraft.mod.libs.Reference;
-import com.skyrimcraft.mod.libs.SCDecs;
 import com.skyrimcraft.mod.libs.SCInits;
 import com.skyrimcraft.mod.libs.SCRegisters;
+import com.skyrimcraft.mod.proxy.ClientProxy;
 import com.skyrimcraft.mod.proxy.CommonProxy;
 
 import cpw.mods.fml.common.Mod;
@@ -37,6 +32,7 @@ public class SkyrimCraft {
 	
 	@SidedProxy(clientSide = "com.skyrimcraft.mod.proxy.ClientProxy", serverSide = "com.skyrimcraft.mod.proxy.CommonProxy")
 	public static CommonProxy proxy;
+	public static ClientProxy cProxy;
 	
 	@Instance(Reference.modID)
 	public static SkyrimCraft instance;
@@ -47,7 +43,6 @@ public class SkyrimCraft {
 	public static final Enchantment frostEnchantment = new EnchantmentFrost(84, 0);
 	public static final Enchantment meridiasRetribution = new EnchantmentMeridiasRetribution(85, 0);
 	public static final Enchantment shockEnchantment = new EnchantmentShock(86, 0);
-	public static final Enchantment absorbHealthEnchantment = new EnchantmentAbsorbHealth(87, 0);
 	
 	@EventHandler
 	public void PreInit(FMLPreInitializationEvent preEvent) {
