@@ -54,7 +54,6 @@ public class SkyrimCraft {
 		proxy.preInit(preEvent);
 		GameRegistry.registerWorldGenerator(handler, 0);
 		NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
-		
 	}
 
 	@EventHandler

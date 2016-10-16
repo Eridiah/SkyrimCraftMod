@@ -40,7 +40,8 @@ item.DragonBane.name=Dragonbane
 item.DawnBreaker.name=Dawnbreaker
 item.ChillRend.name=Chillrend
 
-item.MapleBow.name=Maple Bow
+item.HuntingBow.name=Hunting Bow
+item.ElvenBow.name=Elven Bow
 
 item.DragonBoneDagger.name=DragonBone Dagger
 item.DragonBoneSword.name=DragonBone Sword

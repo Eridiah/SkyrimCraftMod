@@ -134,7 +134,8 @@ public class SCRegisters {
 		//Bows
 			
 			//Maple
-			GameRegistry.registerItem(SCDecs.itemMapleBow, "MapleBow");
+			GameRegistry.registerItem(SCDecs.itemHuntingBow, "HuntingBow");
+			GameRegistry.registerItem(SCDecs.itemElvenBow, "ElvenBow");
 			
 			
 		//Special Weapons

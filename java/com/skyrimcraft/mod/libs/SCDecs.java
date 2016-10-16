@@ -130,7 +130,8 @@ public class SCDecs {
 	//Bows
 		
 		//Maple
-			public static Item itemMapleBow;
+			public static Item itemHuntingBow;
+			public static Item itemElvenBow;
 			
 	//Special Weapons
 			

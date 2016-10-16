@@ -53,8 +53,7 @@ public class ModSwordBase extends Item {
     	return true;
     }
     
-    public boolean onBlockDestroyed(ItemStack stack, World world, Block block, int i, int j, int k, EntityLivingBase entity)
-    {
+    public boolean onBlockDestroyed(ItemStack stack, World world, Block block, int i, int j, int k, EntityLivingBase entity) {
         if ((double)block.getBlockHardness(world, i, j, k) != 0.0D)
         {
             stack.damageItem(2, entity);
@@ -64,51 +63,42 @@ public class ModSwordBase extends Item {
     }
     
     @SideOnly(Side.CLIENT)
-    public boolean isFull3D()
-    {
+    public boolean isFull3D() {
         return true;
     }
     
-    public EnumAction getItemUseAction(ItemStack stack)
-    {
+    public EnumAction getItemUseAction(ItemStack stack) {
         return EnumAction.block;
     }
     
-    public int getMaxItemUseDuration(ItemStack stack)
-    {
+    public int getMaxItemUseDuration(ItemStack stack) {
         return 72000;
     }
     
-    public ItemStack onItemRightClick(ItemStack stack, World world, EntityPlayer player)
-    {
+    public ItemStack onItemRightClick(ItemStack stack, World world, EntityPlayer player) {
         player.setItemInUse(stack, this.getMaxItemUseDuration(stack));
         return stack;
     }
     
-    public boolean isBlockWeb(Block block)
-    {
+    public boolean isBlockWeb(Block block) {
         return block == Blocks.web;
     }
     
-    public int getItemEnchantability()
-    {
+    public int getItemEnchantability() {
         return this.toolMaterial.getEnchantability();
     }
     
-    public String getToolMaterialName()
-    {
+    public String getToolMaterialName() {
         return this.toolMaterial.toString();
     }
     
-    public boolean getIsRepairable(ItemStack stack, ItemStack itemStack)
-    {
+    public boolean getIsRepairable(ItemStack stack, ItemStack itemStack) {
         ItemStack mat = this.toolMaterial.getRepairItemStack();
         if (mat != null && net.minecraftforge.oredict.OreDictionary.itemMatches(mat, itemStack, false)) return true;
         return super.getIsRepairable(stack, itemStack);
     }
     
-    public Multimap getItemAttributeModifiers()
-    {
+    public Multimap getItemAttributeModifiers() {
         Multimap multimap = super.getItemAttributeModifiers();
         multimap.put(SharedMonsterAttributes.attackDamage.getAttributeUnlocalizedName(), new AttributeModifier(field_111210_e, "Weapon modifier", (double)this.float1, 0));
         return multimap;

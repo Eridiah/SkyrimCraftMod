@@ -2,7 +2,8 @@ package com.skyrimcraft.mod.libs;
 
 import com.skyrimcraft.mod.blocks.SCOres;
 import com.skyrimcraft.mod.blocks.ToolForge;
-import com.skyrimcraft.mod.bows.MapleBow;
+import com.skyrimcraft.mod.bows.HuntingBow;
+import com.skyrimcraft.mod.bows.ModBowBase;
 import com.skyrimcraft.mod.items.DaedraHeart;
 import com.skyrimcraft.mod.items.DaedraHeartReg;
 import com.skyrimcraft.mod.items.SCIngots;
@@ -133,7 +134,8 @@ public class SCInits {
 			//Bow
 				
 				//Maple
-				SCDecs.itemMapleBow = new MapleBow().setUnlocalizedName("MapleBow");
+				SCDecs.itemHuntingBow = new ModBowBase().setUnlocalizedName("HuntingBow");
+				SCDecs.itemElvenBow = new ModBowBase().setUnlocalizedName("ElvenBow");
 				
 				
 			//Special Weapons

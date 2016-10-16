@@ -1,6 +1,9 @@
 package com.skyrimcraft.mod.bows;
 
+import java.util.List;
+
 import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.player.EntityPlayer;
@@ -10,6 +13,7 @@ import net.minecraft.item.EnumAction;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
+import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.player.ArrowLooseEvent;
@@ -21,14 +25,14 @@ import com.skyrimcraft.mod.libs.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class MapleBow extends Item {
-
+public class ModBowBase extends Item {
+	
 	public static final String[] bowPullIconNameArray = new String[] {"pulling_0", "pulling_1", "pulling_2"};
 	
 	@SideOnly(Side.CLIENT)
 	private IIcon[] iconArray;
 	
-	public MapleBow() {
+	public ModBowBase() {
 		
 		this.setFull3D();
 		this.setMaxStackSize(1);
